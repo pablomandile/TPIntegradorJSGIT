@@ -98,6 +98,7 @@ form{
 }
 .Opciones{
     margin: 2em 20% 0 32% !important;
+    
 }
 .llamada{
     font-size: .9em;
@@ -116,3 +117,9 @@ form{
 .card-body{
     cursor: pointer;
 }
+
+@media (max-width: 1280px) {
+    footer{
+        margin-top: 8em;
+    }
+ }

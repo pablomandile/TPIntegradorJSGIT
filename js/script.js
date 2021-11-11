@@ -42,7 +42,6 @@ function calculoDescuento(){
 var tarjetas = document.querySelectorAll('div.card-body');
 tarjetas.forEach((element) => {
     element.addEventListener('click', e => {
-        console.log(e.target.id)
         switch (element.id){
             case 'tarjeta1':
                 tarjetas[1].style.backgroundColor = 'white';
@@ -68,7 +67,29 @@ tarjetas.forEach((element) => {
         };
       });
 });
-console.log(tarjetas);
+
+categoria.addEventListener('click', e =>{
+    //console.log(e.target.value);
+    switch (e.target.value){
+        case '1':
+            tarjetas[1].style.backgroundColor = 'white';
+            tarjetas[2].style.backgroundColor = 'white';
+            tarjetas[0].style.backgroundColor = 'rgb(179, 230, 255)';
+        break;
+        case '2':
+            tarjetas[0].style.backgroundColor = 'white';
+            tarjetas[2].style.backgroundColor = 'white';
+            tarjetas[1].style.backgroundColor = 'rgb(153, 255, 204)';
+        break;
+        case '3':
+            tarjetas[0].style.backgroundColor = 'white';
+            tarjetas[1].style.backgroundColor = 'white';
+            tarjetas[2].style.backgroundColor = 'rgb(255, 255, 204)';
+        break;
+        default:
+        break;
+    };
+});
 
 // link logo
 
