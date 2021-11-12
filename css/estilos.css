@@ -123,3 +123,51 @@ form{
         margin-top: 8em;
     }
  }
+ @media (max-width: 414px) {
+    footer{
+        margin-top: 12em;
+    }
+    .Opciones{
+        margin: 2em 1rem 0 3.5rem !important;
+    }
+    .formTickets{
+        margin: 2rem 0 1em 4.5rem !important;
+    }
+    form{
+        margin:0 !important;
+        width:250px;
+    }
+    section{
+        width:360px;
+    }
+    nav{
+        padding:0px 0px;  
+    }
+    .btn-success{
+        width:16rem!important;
+        background-color: rgb(89, 175, 108);
+    }
+    .llamadaAccion{
+        position:absolute;
+        top:30%;
+        left:10%;
+        color:white;
+        margin-right: 15%;
+        text-align: right;
+    }
+    #btnOrador{
+        width:16rem;
+    }
+    #btnInfo{
+        margin-bottom: 3rem;
+    }
+    #formorador{
+        width:100%;      
+    }
+    #datosorador{
+        margin-left: 4rem!important;
+    }
+    #titulo1{
+        margin-left: 2rem!important;
+    }
+ }
